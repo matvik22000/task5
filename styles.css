@@ -1,0 +1,145 @@
+body {
+    font-family: 'MedievalSharp', cursive;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h1, h2 {
+    font-family: 'MedievalSharp', cursive;
+    color: #000;
+}
+
+.first-letter {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 5px solid #ccc;
+    padding-left: 15px;
+    margin-left: 0;
+}
+
+.quote {
+    font-family: 'MedievalSharp', cursive;
+    font-style: italic;
+    color: #555;
+}
+
+.newspaper {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.news {
+    margin-bottom: 30px;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #666;
+}
+
+header {
+    background-color: #4e4e4e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.date {
+    font-size: 1.2rem;
+    color: #dcdcdc;
+}
+
+.newspaper {
+    width: 80%;
+    margin: 20px auto;
+    column-count: 3; /* 3 колонки по умолчанию для больших экранов */
+    column-gap: 30px;
+    padding: 20px;
+}
+
+@media (max-width: 724px) {
+    .newspaper {
+        column-count: 1; /* Для мобилок - 1 колонка */
+    }
+}
+
+.first-letter {
+    font-size: 3em;
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+    color: #5a3d2f;
+}
+
+.quote {
+    font-style: italic;
+    border-left: 5px solid #4e4e4e;
+    padding-left: 10px;
+    margin-left: 0;
+    font-size: 1.2rem;
+}
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.news {
+    break-inside: avoid;
+    margin-bottom: 20px;
+}
+
+h2 {
+    word-break: break-word;
+    font-size: 2rem;
+    color: #4e4e4e;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #5a3d2f;
+}
+
+p {
+    text-align: justify;
+}
+
+.special-text {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+    color: #5a3d2f;
+    line-height: 1.2;
+}
